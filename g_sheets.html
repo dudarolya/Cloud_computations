@@ -13,8 +13,8 @@
     <pre id="content" style="white-space: pre-wrap;"></pre>
 
     <script type="text/javascript">
-      var CLIENT_ID = '1051240310070-0874i5cvuglnjb8vojuhj2qpbkqqfnc1.apps.googleusercontent.com';
-      var API_KEY = 'AIzaSyAoph-_GetSdgLFgvtCBvpv0ziykxSc4YY';
+      var CLIENT_ID = '******.apps.googleusercontent.com';
+      var API_KEY = 'AIzaS**********4YY';
       var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
       var SCOPES = "https://www.googleapis.com/auth/spreadsheets";
       var authorizeButton = document.getElementById('authorize_button');
@@ -63,10 +63,9 @@
         pre.appendChild(textContent);
       }
 
-      //  https://docs.google.com/spreadsheets/d/1VnPljScobiGEzQG5_sTVaaPY7rnpCcINZGYF7j6taU4/edit
       function listMajors() {
         gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: '1VnPljScobiGEzQG5_sTVaaPY7rnpCcINZGYF7j6taU4',
+          spreadsheetId: '1VnPljScobiGEzQ************ZGYF7j6taU4',
           range: 'Class Data!A2:E',
         }).then(function(response) {
           var range = response.result;
