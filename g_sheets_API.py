@@ -7,7 +7,6 @@ print("Enter the ID of the file...")
 sheet_id = input()
 CREDENTIALS_FILE = 'proj1.json'
 spreadsheet_id = sheet_id
-#17Pe1U2_86I2MGm802sloZtdN8DH0wez4Fs17BWCL2dI
 credentials = ServiceAccountCredentials.from_json_keyfile_name(
     CREDENTIALS_FILE,
     ['https://www.googleapis.com/auth/spreadsheets',
